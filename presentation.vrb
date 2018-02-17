@@ -1,0 +1,3 @@
+\frametitle{References}
+\bibliography{presentation.bib}
+\bibliographystyle{ieeetr}
