@@ -33,7 +33,7 @@ Universit\'e de Montr\'eal}
 	
 \section{Introduction}
 
-\begin{frame}[fragile]{Questions}
+\begin{frame}{Questions}
 	\begin{center}
 		\textbf{Main Question}\\
 		What distinguishes Neural Networks that generalize well from those that don't?
@@ -46,7 +46,7 @@ Universit\'e de Montr\'eal}
 	
 \end{frame}	
 
-\begin{frame}[fragile]{Questions}
+\begin{frame}{Questions}
 	
 	\begin{figure}
 	\centering
@@ -57,7 +57,7 @@ Universit\'e de Montr\'eal}
 
 \end{frame}	
 
-\begin{frame}[fragile]{Motivation}
+\begin{frame}{Motivation}
 \begin{center}
 	Why do we care about the problem?
 \end{center}
@@ -71,7 +71,7 @@ Universit\'e de Montr\'eal}
 
 \section{Background}
 
-\begin{frame}[fragile]{Previous Approaches}
+\begin{frame}{Previous Approaches}
 	
 Statistical Learning Theory gives bounds on the Generalization Error using:
 \begin{itemize}
@@ -82,7 +82,7 @@ Statistical Learning Theory gives bounds on the Generalization Error using:
 Theory suggests that some regularization helps (including Early Stopping)
 \end{frame}	
 
-\begin{frame}[fragile]{Related Work}
+\begin{frame}{Related Work}
 
 In 2016 Hardt et al. gives an Upper bound on Generalization error on model using SGD using uniform stability \cite{DBLP:journals/corr/HardtRS15}
 
@@ -92,7 +92,7 @@ Uniform stability is a property of a learning algorithm and is not affected by t
 
 \end{frame}
 
-\begin{frame}[fragile]{Limitations}
+\begin{frame}{Limitations}
 \begin{alertblock}{Main Message}
 	Statistical Learning Theory is insufficient in that it cannot distinguish between neural networks with dramatically different generalization performance.
 \end{alertblock}
@@ -107,7 +107,7 @@ This is demonstrated in the paper \cite{DBLP:journals/corr/ZhangBHRV16}. The cen
 
 \section{Results}
 
-\begin{frame}[fragile]{Experiment}
+\begin{frame}{Experiment}
 	\textbf{Setup}: trained several standard architectures on the data with various modifications:
 	\begin{enumerate}
 		\item True labels $\rightarrow$ No modifications
@@ -119,7 +119,7 @@ This is demonstrated in the paper \cite{DBLP:journals/corr/ZhangBHRV16}. The cen
 
 \end{frame}
 
-\begin{frame}[fragile]{Main Results}
+\begin{frame}{Main Results}
 		\begin{figure}
 			\centering
 		\centering
@@ -129,7 +129,7 @@ This is demonstrated in the paper \cite{DBLP:journals/corr/ZhangBHRV16}. The cen
 		\end{figure}
 \end{frame}
 
-\begin{frame}[fragile]{Results}
+\begin{frame}{Results}
 	In most cases, the training error went to zero while test error was high
 	
 	\begin{alertblock}{Notice:}
@@ -138,7 +138,7 @@ This is demonstrated in the paper \cite{DBLP:journals/corr/ZhangBHRV16}. The cen
 
 \end{frame}
 
-\begin{frame}[fragile]{Results}
+\begin{frame}{Results}
 	\begin{center}
 			\emph{Explicit regularization may improve generalization performance, but is neither necessary nor by itself sufficient for controlling generalization error}
 	\end{center}
@@ -153,7 +153,7 @@ This is demonstrated in the paper \cite{DBLP:journals/corr/ZhangBHRV16}. The cen
 
 \section{Technical dive}
 
-\begin{frame}[fragile]{Technical dive }
+\begin{frame}{Technical dive }
 	Some definitions:
 	\begin{itemize}
 		\item \textbf{Representational Capacity}: A models ability to fit a wide variety of functions:
@@ -161,15 +161,50 @@ This is demonstrated in the paper \cite{DBLP:journals/corr/ZhangBHRV16}. The cen
 	\end{itemize}
 \end{frame}	
 
-\begin{frame}[fragile]{Technical dive }
-	What is an interesting analytical technique, proof method, experimental protocol, other approach to doing things? What is one technical thing that we can learn here? Explain in a few slides.
+\begin{frame}{Finite-sample expressivity }
+%Theorem 1.
+\begin{block}{Theorem}
+There exists a two-layer neural network with ReLU activations and $2n+d$
+weights that can represent any function on a sample of size $n$ in $d$ dimensions.
+\end{block}
 \end{frame}	
+\begin{frame}{Proof }
+\begin{block}{Lemma 1}
+For any two interleaving sequences of n real numbers $b_1 < x_1 < b_2 < x_2 \dots < b_n < x_n$
+, the $n \times n$ matrix $A = [max \{x_i - b_j,0\}]_ij$ has full rank. Its smallest eigenvalue is
+$min_i\{ x_i - b_i\}$
+\end{block}
 
+	%What is an interesting analytical technique, proof method, experimental protocol, other approach to doing things? What is one technical thing that we can learn here? Explain in a few slides.
+	
+	
+\end{frame}	
+\begin{frame}{Proof}
+%Theorem 1.
+For weight vectors $w, b \in R^n$ and $a \in R^d$, consider the function $c : R^n \to R$,
+\[c(x) =\sum \limits_{j=1}w_j\, max\{a^Tx - bj , 0\}\]
+\only<2->{
+\begin{itemize}
+\item \only<2>{ This can be done trivially with a depth 2 neural network with relu. }
+
+\only<3,5>{Now, fixing a sample $S = {z_1, \dots , z_n}$ of size n and a target vector $y \in  R_n$. We
+	need to find weights $a, b,w $ so that $y_i = c(z_i)$ for all $i \in \{1, \dots , n\}$
+}
+\only<4>{ First, choose a and b such that with $x_i = a_i^Tz_i$ we have the interleaving property $b_1 < x_1 < b_2 <
+	\dots < b_n < x_n$ %This is possible since all zi’s are distinct. 
+	Next, consider the set of n equations in the $n$ unknowns $w$, \[y_i = c(z_i) , i \in \{1, \dots , n\}\]
+	We have $c(z_i) = Aw$, where $A = [max\{x_i − b_i, 0\}]_{ij}$ is the matrix of Lemma 1.}
+\only<5>{\item We chose $a$ and $b$ so that the lemma applies and hence $A$ has full rank. We can now solve the linear
+	system $y = Aw$ to find suitable weights w.}
+\end{itemize}
+}
+
+\end{frame}	
 \section{Discussion}
 
-\begin{frame}[fragile]{Some Thoughts... }
+\begin{frame}{Some Thoughts... }
 	\begin{enumerate}
-		\item My favorite papers are the ones that shed light on truths that are taken for granted.
+		\item Our favourite papers are the ones that shed light on truths that are taken for granted.
 		\item Its obvious that randomizing the labels would eliminate generalizability, but explaining why is not!
 		\item The paper doesn't really make many conclusions of its own.
 	\end{enumerate}
@@ -181,8 +216,8 @@ This is demonstrated in the paper \cite{DBLP:journals/corr/ZhangBHRV16}. The cen
 	What interesting open questions that might have been outside the scope of this paper come to your mind when studying it?
 \end{frame}	
 
-\begin{frame}[fragile]{References}
-\bibliography{presentation.bib}
+\begin{frame}{References}
+\bibliography{presentation}
 \bibliographystyle{ieeetr}
 \end{frame}	
 	
