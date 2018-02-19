@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  17 FEB 2018 12:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  18 FEB 2018 18:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1228,34 +1228,28 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 ] [3
 
 ]
-\openout4 = `presentation.vrb'.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 47.
 
- (./presentation.vrb
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 7.
-LaTeX Font Info:    No file OMScmss.fd. on input line 7.
+LaTeX Font Info:    No file OMScmss.fd. on input line 47.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 7.
+(Font)              for symbol `textbullet' on input line 47.
 
-)
+
 Overfull \hbox (0.4pt too wide) in paragraph at lines 47--47
 [][]  
  []
 
 [4
 
-]
-\openout4 = `presentation.vrb'.
-
- (./presentation.vrb <complexity.png, id=72, 527.571pt x 420.97275pt>
+] <complexity.png, id=72, 527.571pt x 420.97275pt>
 File: complexity.png Graphic file (type png)
-
-<use complexity.png>
-Package pdftex.def Info: complexity.png used on input line 5.
+ <use complexity.png>
+Package pdftex.def Info: complexity.png used on input line 58.
 (pdftex.def)             Requested size: 215.10196pt x 171.63641pt.
-)
+
 Overfull \hbox (0.4pt too wide) in paragraph at lines 58--58
 [][]  
  []
@@ -1263,9 +1257,6 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 58--58
 [5
 
  <./complexity.png>]
-\openout4 = `presentation.vrb'.
-
- (./presentation.vrb)
 Overfull \hbox (0.4pt too wide) in paragraph at lines 70--70
 [][]  
  []
@@ -1275,9 +1266,6 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 70--70
 ] [7
 
 ]
-\openout4 = `presentation.vrb'.
-
- (./presentation.vrb)
 Overfull \hbox (0.4pt too wide) in paragraph at lines 83--83
 [][]  
  []
@@ -1285,9 +1273,6 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 83--83
 [8
 
 ]
-\openout4 = `presentation.vrb'.
-
- (./presentation.vrb)
 Overfull \hbox (0.4pt too wide) in paragraph at lines 93--93
 [][]  
  []
@@ -1295,9 +1280,6 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 93--93
 [9
 
 ]
-\openout4 = `presentation.vrb'.
-
- (./presentation.vrb)
 Overfull \hbox (0.4pt too wide) in paragraph at lines 106--106
 [][]  
  []
@@ -1307,25 +1289,18 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 106--106
 ] [11
 
 ]
-\openout4 = `presentation.vrb'.
-
- (./presentation.vrb)
 Overfull \hbox (0.4pt too wide) in paragraph at lines 120--120
 [][]  
  []
 
 [12
 
-]
-\openout4 = `presentation.vrb'.
-
- (./presentation.vrb <fig1c.png, id=123, 1910.13625pt x 665.48625pt>
+] <fig1c.png, id=123, 1910.13625pt x 665.48625pt>
 File: fig1c.png Graphic file (type png)
-
-<use fig1c.png>
-Package pdftex.def Info: fig1c.png used on input line 5.
+ <use fig1c.png>
+Package pdftex.def Info: fig1c.png used on input line 130.
 (pdftex.def)             Requested size: 307.28987pt x 107.05878pt.
-)
+
 Overfull \hbox (0.4pt too wide) in paragraph at lines 130--130
 [][]  
  []
@@ -1333,25 +1308,18 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 130--130
 [13
 
  <./fig1c.png>]
-\openout4 = `presentation.vrb'.
-
- (./presentation.vrb)
 Overfull \hbox (0.4pt too wide) in paragraph at lines 139--139
 [][]  
  []
 
 [14
 
-]
-\openout4 = `presentation.vrb'.
-
- (./presentation.vrb <fig2c.png, id=137, 1002.74625pt x 353.32pt>
+] <fig2c.png, id=137, 1002.74625pt x 353.32pt>
 File: fig2c.png Graphic file (type png)
-
-<use fig2c.png>
-Package pdftex.def Info: fig2c.png used on input line 9.
+ <use fig2c.png>
+Package pdftex.def Info: fig2c.png used on input line 152.
 (pdftex.def)             Requested size: 307.28987pt x 108.27191pt.
-)
+
 Overfull \hbox (0.4pt too wide) in paragraph at lines 152--152
 [][]  
  []
@@ -1361,9 +1329,6 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 152--152
  <./fig2c.png (PNG copy)>] [16
 
 ]
-\openout4 = `presentation.vrb'.
-
- (./presentation.vrb)
 Overfull \hbox (0.4pt too wide) in paragraph at lines 162--162
 [][]  
  []
@@ -1371,55 +1336,92 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 162--162
 [17
 
 ]
-\openout4 = `presentation.vrb'.
-
- (./presentation.vrb)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 166--166
+Overfull \hbox (0.4pt too wide) in paragraph at lines 170--170
 [][]  
  []
 
 [18
 
-] [19
+]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 181--181
+[][]  
+ []
+
+[19
 
 ]
-\openout4 = `presentation.vrb'.
-
- (./presentation.vrb
-Missing character: There is no â in font cmss10!
-Missing character: There is no € in font cmss10!
-Missing character: There is no ˜ in font cmss10!
-Missing character: There is no â in font cmss10!
-Missing character: There is no € in font cmss10!
-Missing character: There is no ™ in font cmss10!
-Missing character: There is no â in font cmss10!
-Missing character: There is no € in font cmss10!
-Missing character: There is no ˜ in font cmss10!
-Missing character: There is no â in font cmss10!
-Missing character: There is no € in font cmss10!
-Missing character: There is no ™ in font cmss10!
-Missing character: There is no â in font cmss10!
-Missing character: There is no € in font cmss10!
-Missing character: There is no ˜ in font cmss10!
-Missing character: There is no â in font cmss10!
-Missing character: There is no € in font cmss10!
-Missing character: There is no ™ in font cmss10!
-)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 182--182
+Overfull \hbox (0.4pt too wide) in paragraph at lines 202--202
 [][]  
  []
 
 [20
 
 ]
-\openout4 = `presentation.vrb'.
-
- (./presentation.vrb (./presentation.bbl))
-Overfull \hbox (0.4pt too wide) in paragraph at lines 187--187
+Overfull \hbox (0.4pt too wide) in paragraph at lines 202--202
 [][]  
  []
 
 [21
+
+]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 202--202
+[][]  
+ []
+
+[22
+
+]
+Missing character: There is no â in font cmss10!
+Missing character: There is no ˆ in font cmss10!
+Missing character: There is no ’ in font cmss10!
+
+Overfull \hbox (0.4pt too wide) in paragraph at lines 202--202
+[][]  
+ []
+
+[23
+
+]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 202--202
+[][]  
+ []
+
+[24
+
+] [25
+
+]
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ˜ in font cmss10!
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ™ in font cmss10!
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ˜ in font cmss10!
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ™ in font cmss10!
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ˜ in font cmss10!
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ™ in font cmss10!
+
+Overfull \hbox (24.6793pt too wide) in paragraph at lines 217--217
+[][]  
+ []
+
+[26
+
+] (./presentation.bbl)
+Overfull \hbox (48.95863pt too wide) in paragraph at lines 222--222
+[][]  
+ []
+
+[27
 
  </usr/share/texlive/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf>]
 \tf@nav=\write6
@@ -1431,11 +1433,11 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 187--187
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 189.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 189.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
 (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 189.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 189.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D9CC8C7835AC871A8794A7A0593F6408;228.
 
@@ -1446,26 +1448,29 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 189.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
  ) 
 Here is how much of TeX's memory you used:
- 30530 strings out of 494953
- 733228 string characters out of 6180977
- 940714 words of memory out of 5000000
- 33079 multiletter control sequences out of 15000+600000
+ 30518 strings out of 494953
+ 733017 string characters out of 6180977
+ 941714 words of memory out of 5000000
+ 33084 multiletter control sequences out of 15000+600000
  13484 words of font info for 49 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  71i,13n,95p,1758b,737s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on presentation.pdf (21 pages, 303138 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb>
+Output written on presentation.pdf (27 pages, 335273 bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 54 named destinations out of 1000 (max. 500000)
+ 266 PDF objects out of 1000 (max. 8388607)
+ 209 compressed objects within 3 object streams
+ 66 named destinations out of 1000 (max. 500000)
  103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
