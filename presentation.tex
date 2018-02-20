@@ -153,13 +153,13 @@ This is demonstrated in the paper \cite{DBLP:journals/corr/ZhangBHRV16}. The cen
 
 \section{Technical dive}
 
-\begin{frame}{Technical dive }
-	Some definitions:
-	\begin{itemize}
-		\item \textbf{Representational Capacity}: A models ability to fit a wide variety of functions:
-		\item \textbf{Effective Capacity}: The functions that the Learning Algorithm is capable of learning e.g. imperfection of optimization algorithm.
-	\end{itemize}
-\end{frame}	
+%\begin{frame}{Technical dive }
+%	Some definitions:
+%	\begin{itemize}
+%		\item \textbf{Representational Capacity}: A models ability to fit a wide variety of functions:
+%		\item \textbf{Effective Capacity}: The functions that the Learning Algorithm is capable of learning e.g. imperfection of optimization algorithm.
+%	\end{itemize}
+%\end{frame}	
 
 \begin{frame}{Finite-sample expressivity }
 %Theorem 1.
@@ -171,7 +171,7 @@ weights that can represent any function on a sample of size $n$ in $d$ dimension
 \begin{frame}{Proof }
 \begin{block}{Lemma 1}
 For any two interleaving sequences of n real numbers $b_1 < x_1 < b_2 < x_2 \dots < b_n < x_n$
-, the $n \times n$ matrix $A = [max \{x_i - b_j,0\}]_ij$ has full rank. Its smallest eigenvalue is
+, the $n \times n$ matrix $A = [max \{x_i - b_j,0\}]_{ij}$ has full rank. Its smallest eigenvalue is
 $min_i\{ x_i - b_i\}$
 \end{block}
 
@@ -205,10 +205,10 @@ For weight vectors $w, b \in R^n$ and $a \in R^d$, consider the function $c : R^
 \begin{frame}{Some Thoughts... }
 	\begin{enumerate}
 		\item Our favourite papers are the ones that shed light on truths that are taken for granted.
-		\item Its obvious that randomizing the labels would eliminate generalizability, but explaining why is not!
+		\item Its obvious that randomizing the labels would eliminate generalizability, but finding precise mathematical statements about this is not!
 		\item The paper doesn't really make many conclusions of its own.
-		\item The most important result is that a depth 2 neural network with relu activation can learn well overlearn any function.
-		\item This result is the most promising to improve with says a test set and other technique to prevent simply learning every point.
+		\item Models used in practice have the capability of memorizing the training data. Is it somehow easier not to?
+		\item The interplay between generalization and ease of optimization seems like an interesting thing to explore...
 	\end{enumerate}
 
 	
