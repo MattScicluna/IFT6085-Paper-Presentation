@@ -94,7 +94,7 @@ Uniform stability is a property of a learning algorithm and is not affected by t
 
 \begin{frame}{Limitations}
 \begin{alertblock}{Main Message}
-	Statistical Learning Theory is insufficient in that it cannot distinguish between neural networks with dramatically different generalization performance.
+	Classic results (e.g. PAC bounds) are insufficient in that they cannot distinguish between neural networks with dramatically different generalization performance.
 \end{alertblock}
 
 This is demonstrated in the paper \cite{DBLP:journals/corr/ZhangBHRV16}. The central finding:
@@ -212,16 +212,22 @@ For weight vectors $w, b \in R^n$ and $a \in R^d$, consider the function $c : R^
 
 \end{frame}	
 \section{Discussion}
+\begin{frame}{What We Were Talking About... }
+	To recap:
+	\begin{enumerate}
+		\item We just showed that generically large neural networks can express any labelling of the training data
+		\item And so it is not surprising to see the networks learn the training data perfectly
+		\item but it is surprising that we can't explain this well!
+	\end{enumerate}
+\end{frame}
 
 \begin{frame}{Some Thoughts... }
 	\begin{enumerate}
 		\item Our favourite papers are the ones that shed light on truths that are taken for granted.
 		\item Its obvious that randomizing the labels would eliminate generalizability, but finding precise mathematical statements about this is not!
-		\item The paper doesn't really make many conclusions of its own.
 		\item Models used in practice have the capability of memorizing the training data. Is it somehow easier not to?
 		\item The interplay between generalization and ease of optimization seems like an interesting thing to explore...
 	\end{enumerate}
-
 	%What is not convincing? (too strong assumptions? results not as ‘good’/‘tight’ as other approaches we might know? results are not applicable for ‘x’ reason? bounds are vacuous?)
 	
 	%What can be improved? (if you where to work in this area, which part of the result would you tweak to make it better, non-vacuous, tighter, more relevant...)
@@ -229,9 +235,11 @@ For weight vectors $w, b \in R^n$ and $a \in R^d$, consider the function $c : R^
 	%What interesting open questions that might have been outside the scope of this paper come to your mind when studying it?
 \end{frame}	
 
-\begin{frame}{Any Questions... }
-Any Questions?
-\end{frame}	
+{\setbeamercolor{palette primary}{fg=black, bg=cyan}
+	\begin{frame}[standout]
+		Any Questions?
+	\end{frame}
+}
 
 \begin{frame}{References}
 \bibliography{presentation}

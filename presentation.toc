@@ -4,4 +4,4 @@
 \beamer@sectionintoc {2}{Background}{7}{0}{2}
 \beamer@sectionintoc {3}{Results}{11}{0}{3}
 \beamer@sectionintoc {4}{Technical dive}{16}{0}{4}
-\beamer@sectionintoc {5}{Discussion}{24}{0}{5}
+\beamer@sectionintoc {5}{Discussion}{26}{0}{5}
