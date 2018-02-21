@@ -33,7 +33,7 @@ Universit\'e de Montr\'eal}
 	
 \section{Introduction}
 
-\begin{frame}{Questions}
+\begin{frame}{Main Question}
 	\begin{center}
 		\textbf{Main Question}\\
 		What distinguishes Neural Networks that generalize well from those that don't?
@@ -46,7 +46,7 @@ Universit\'e de Montr\'eal}
 	
 \end{frame}	
 
-\begin{frame}{Questions}
+\begin{frame}{Traditional View}
 	
 	\begin{figure}
 	\centering
@@ -73,13 +73,13 @@ Universit\'e de Montr\'eal}
 
 \begin{frame}{Previous Approaches}
 	
-Statistical Learning Theory gives bounds on the Generalization Error using:
+We can bound the Generalization Error using measures of complexity such as:
 \begin{itemize}
 	\item VC Dimension 
 	\item Rademacher Complexity
 	\item Uniform Stability
 \end{itemize}
-Theory suggests that some regularization helps (including Early Stopping)
+Additionally, regularization can help (including Early Stopping)
 \end{frame}	
 
 \begin{frame}{Related Work}
@@ -164,7 +164,7 @@ This is demonstrated in the paper \cite{DBLP:journals/corr/ZhangBHRV16}. The cen
 \begin{frame}{Finite-sample expressivity }
 %Theorem 1.
 \begin{block}{Theorem}
-There exists a two-layer neural network with ReLU activations and $2n+d$
+There exists\footnote{NOT all networks satisfy this} a two-layer neural network with ReLU activations and $2n+d$
 weights that can represent any function on a sample of size $n$ in $d$ dimensions.
 \end{block}
 \end{frame}	
@@ -182,7 +182,7 @@ $min_i\{ x_i - b_i\}$
 \begin{frame}{Proof}
 %Theorem 1.
 For weight vectors $w, b \in R^n$ and $a \in R^d$, consider the function $c : R^n \to R$,
-\[c(x) =\sum \limits_{j=1}w_j\, max\{a^Tx - bj , 0\}\]
+\[c(x) =\sum \limits_{j=1}w_j\, max\{a^Tx - b_j , 0\}\]
 \only<2->{
 \begin{itemize}
 \item \only<2>{ This can be done trivially with a depth 2 neural network with relu. }
@@ -211,13 +211,15 @@ For weight vectors $w, b \in R^n$ and $a \in R^d$, consider the function $c : R^
 		\item The interplay between generalization and ease of optimization seems like an interesting thing to explore...
 	\end{enumerate}
 
-	
-	
 	%What is not convincing? (too strong assumptions? results not as ‘good’/‘tight’ as other approaches we might know? results are not applicable for ‘x’ reason? bounds are vacuous?)
 	
 	%What can be improved? (if you where to work in this area, which part of the result would you tweak to make it better, non-vacuous, tighter, more relevant...)
 	
 	%What interesting open questions that might have been outside the scope of this paper come to your mind when studying it?
+\end{frame}	
+
+\begin{frame}{Any Questions... }
+Any Questions?
 \end{frame}	
 
 \begin{frame}{References}
